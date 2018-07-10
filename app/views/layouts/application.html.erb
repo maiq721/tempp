@@ -3,7 +3,7 @@
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all',
+    <%= stylesheet_link_tag 'application', media: 'all',
                                               'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'layouts/shim' %>
@@ -13,18 +13,6 @@
     <![endif]-->
   </head>
   <body>
-    <!-- <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "Sample app", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right menu">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Help",   '#' %></li>
-            <li><%= link_to "Log in", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header> -->
     <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>
